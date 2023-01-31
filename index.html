@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My TV Show</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Styles.css">
+
+</head>
+
+<body>
+
+
+<!--Header-->
+<header>
+<div class="jumbotron text-center" style="background-color: #ff5349;">
+  <h1 >VYI TV presents The Amaze! Squad</h1>
+  <p>The Amaze Squad is a group of four people who have helped anyone who is getting bullied or made fun of,
+    and this squad helps that kid who is getting bullied.</p><br>
+    TSA Team Id: ######
+</div>
+</header>
+
+<!--Start of Navbar Menu block-->
+ <nav class="navbar navbar-inverse" margin="auto property"  style="background-color: #FFA500;">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav" >
+      <li class="active"><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+      <li><a href="References.html">References</a></li>
+      <li><a href="Donate!.html">Donate!</a></li>
+    </ul>
+  </div>
+</nav>
+<!--End of Navbar Menu block-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+
+<!--Start of Slideshow code block-->
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+       <div class="text">Episode 1: Lionel saves the day!</div>
+       <img src="pics/Slide1.png" style="width:100%" height = "415px" width = "800px">
+    </div>
+
+    <div class="mySlides fade">
+       <div class="text">Episode 2: Abdul teaches bully a lesson! </div>
+       <img src="pics/Slide2.png" style="width:100%" height = "415px" width = "800px" >
+    </div>
+
+    <div class="mySlides fade">
+       <div class="text">Episode 3: Jamaal to the rescue!</div>
+       <img src="pics/Slide3.png" style="width:100%" height = "415px" width = "800px">
+    </div>
+
+    </div><br>
+
+    <div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function checkButton() {
+            if(document.getElementById('option-two').checked) {
+                document.getElementById("disp").innerHTML
+                    = " You got it!";
+            }
+            else {
+                document.getElementById("disp").innerHTML
+                    = "Try again! You can do it!";
+            }
+        }
+</script>
+<!--End of Slideshow code block-->
+
+    <p>The Amaze Squad is a group of four people who have helped anyone who is getting bullied or made fun of, and this squad helps that kid who is getting bullied.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Schedule</h3>
+      <p>Watch your favourite show on VYI TV!</p>
+      <p class="animate-charcter" ><b>Every Tuesday and Thursday 5:30 PM MST</b></p>
+
+      <div style="background-color: #ff5349;  text-align: center;  font-size: 20px;  color: #FFFF00;">
+	<b>Play quiz on your favorite show here!</b><br>
+      <h4>Which character plays good soccer?</h4><br>
+
+                <span>
+                    <input type="radio" id="option-one" name="option"value="optionA" selected=true /><label for="option-one" class="option" id="option-one-label">Jamaal</label>
+                </span><br>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label">Lionel</label>
+                </span><br>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option"  value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label">Sam</label>
+                </span><br>
+
+		    <button type="button" onclick=" checkButton()" style="background-color: #FFA500;
+   text-align: center;
+  font-size: 20px;
+  color: #fff800;"> Submit </button>
+
+		    <h3 id="disp" style= "background-color:44107a;"> </h3>
+
+
+</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+<div class="row" width = "50%" padding = 200px>
+    <div class="col-sm-3">
+	<img src="pics/LionelResize.png" alt= "Lionel from the Amaze Squad" class = "image" width="100%"/>
+<p>Lionel is the smartest in the Amaze Squad. He plays soccer and he is very kind and caring. He often helps other kids with math and science.</p>
+
+    </div>
+   <div class="col-sm-3">
+      <img src="pics/AbdulResize.png" alt= "Abdul from the Amaze Squad" width="100%"/>
+<p>Abdul is the adventurous and brave kid in the Amaze Squad. Another great trait of his is that he is determined, he also is very good at basketball.</p>
+
+    </div>
+<div class="col-sm-3">
+      <img src="pics/robbresize.png" alt= "Robb from the Amaze Squad" width="100%"/>
+<p>Robb is the sports kid in the group, he plays essentially all sports, but he particularly likes volleyball and baseball. He is the impulsive one in the group, but Jamaal helps him with patience.</p>
+
+    </div>
+<div class="col-sm-3">
+      <img src="pics/jamalresize.png" alt= "Jamal from the Amaze Squad" width="100%"/>
+<p>Jamaal is the most calm person in the Amaze Squad. He keeps everyone calm (Especially Robb!) and he is very good at solving social/emotional problems.</p>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+<footer align = "center">
+  <p>This site reserves all rights to the content</p>
+</footer>
+
+
+
+</body>
+</html>

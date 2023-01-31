@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.monkey {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="pics/lionelC.png" alt="Lionel from the Amaze! Squad" class="image" style="width:50%">
+  <div class="middle" >
+	<div class="monkey" style="width:50%">Lionel is very good at soccer. He is very kind and helpful to others. 
+      He met the other members of the Amaze! Squad a few years ago at school and they have all been best friends ever since!
+      </div>
+  </div>
+</div>
+</body>
+</html>
